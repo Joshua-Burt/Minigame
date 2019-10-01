@@ -1,0 +1,4 @@
+pick_wood,6,log
+pick_stone,2,log,5,stone
+pick_iron,2,log,5,iron
+pick_gold,2,log,5,gold
