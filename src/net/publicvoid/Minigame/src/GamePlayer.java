@@ -649,6 +649,7 @@ public class GamePlayer extends JPanel {
     }
 
     private ArrayList<CraftingRecipe> getCraftable() {
+        //TODO: Finish crafting system
         ArrayList<CraftingRecipe> craftable = new ArrayList<>();
 
 
