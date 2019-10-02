@@ -59,22 +59,13 @@ public class World {
                 Block block = null;
 
                 if (ID != 7) {
-                    try {
-                        Block tempBlock = blockTypes.getBlock(ID);
+                    Block tempBlock = blockTypes.getBlock(ID);
 
-                        block = new Block(ID, tempBlock.getType(), tempBlock.getSprite(), new Point(o, i), tempBlock.getHardness());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    block = new Block(ID, tempBlock.getType(), tempBlock.getSprite(), new Point(o, i), tempBlock.getHardness());
                 }
                 else {
-                    try {
-                        Block tempBlock = blockTypes.getBlock(ID);
-
-                        block = new Block(ID, tempBlock.getType(), tempBlock.getSprite(), tempBlock.getTopSprite(), new Point(o, i), tempBlock.getHardness());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    Block tempBlock = blockTypes.getBlock(ID);
+                    block = new Block(ID, tempBlock.getType(), tempBlock.getSprite(), tempBlock.getTopSprite(), new Point(o, i), tempBlock.getHardness());
                 }
 
                 //Set the location in the world
